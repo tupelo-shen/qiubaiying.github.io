@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      嵌入式Linux学习路线
-subtitle:   自己总结的个人学习linux的路线，主要是嵌入式方向
+title:      Linux内核0-使用QEMU和GDB调试Linux内核
+subtitle:   基于x86架构搭建Linux内核调试环境
 date:       2020-02-27
 author:     BY
 header-img: img/post-bg-unix-linux.jpg

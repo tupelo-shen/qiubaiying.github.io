@@ -3,7 +3,7 @@ layout:     post
 title:      Linux设备驱动开发3-Kconfig构建系统
 subtitle:   Linux源代码的地图
 date:       2020-02-06
-author:     BY
+author:     Tupelo Shen
 header-img: img/post-bg-re-vs-ng2.jpg
 catalog:    true
 tags:

@@ -3,7 +3,7 @@ layout:     post
 title:      Linux设备驱动开发1-Hello_World
 subtitle:   学习任何一门语言，几乎都是从Hello开始的
 date:       2020-02-06
-author:     BY
+author:     Tupelo Shen
 header-img: img/post-bg-re-vs-ng2.jpg
 catalog:    true
 tags:

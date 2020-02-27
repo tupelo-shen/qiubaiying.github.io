@@ -3,7 +3,7 @@ layout:     post
 title:      Linux内核0-使用QEMU和GDB调试Linux内核
 subtitle:   基于x86架构搭建Linux内核调试环境
 date:       2020-02-27
-author:     BY
+author:     Tupelo Shen
 header-img: img/post-bg-unix-linux.jpg
 catalog:    true
 tags:

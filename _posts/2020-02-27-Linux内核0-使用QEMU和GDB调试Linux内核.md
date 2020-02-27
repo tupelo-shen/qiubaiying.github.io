@@ -8,6 +8,7 @@ header-img: img/post-bg-unix-linux.jpg
 catalog:    true
 tags:
     - Linux
+    - Linux内核
 ---
 
 （文章大部分转载于：[https://consen.github.io/2018/01/17/debug-linux-kernel-with-qemu-and-gdb/](https://consen.github.io/2018/01/17/debug-linux-kernel-with-qemu-and-gdb/)）

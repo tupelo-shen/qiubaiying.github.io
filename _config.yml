@@ -60,13 +60,13 @@ disqus_username: tupelo-shen
 
 # Gitalk
 gitalk:
-  enable: false    #是否开启Gitalk评论
-  clientID: f2c84e7629bb1446c1a4                            #生成的clientID
-  clientSecret: ca6d6139d1e1b8c43f8b2e19492ddcac8b322d0d    #生成的clientSecret
-  repo: qiubaiying.github.io    #仓库名称
-  owner: qiubaiying    #github用户名
-  admin: qiubaiying
-  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+  enable: true                                              #是否开启Gitalk评论
+  clientID: 87e3f67c3a9b90dd7a03                            #生成的clientID
+  clientSecret: 60ee1492ce29442e2639c427f933d3ffecc61339    #生成的clientSecret
+  repo: tupelo-shen.github.io                               #仓库名称
+  owner: tupelo-shen                                        #github用户名
+  admin: tupelo-shen
+  distractionFreeMode: true                                 #是否启用类似FB的阴影遮罩
 
 
 # 统计

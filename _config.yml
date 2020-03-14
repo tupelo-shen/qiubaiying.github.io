@@ -13,8 +13,6 @@ github_repo: "https://github.com/tupelo-shen/tupelo-shen.github.io.git" # you co
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "扫码加入公众号！！！"
 sidebar-avatar: /img/wechat_QR_code.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
-sidebar-about-description: "123456"
-sidebar-avatar: /img/wechat_QR_code.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 

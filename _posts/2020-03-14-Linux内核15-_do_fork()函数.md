@@ -11,7 +11,7 @@ tags:
     - Linux内核
     - clone
     - fork
-    - vfork
+    - _do_fork
 ---
 # 1. `_do_fork()`函数
 

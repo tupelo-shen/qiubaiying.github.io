@@ -14,7 +14,7 @@ tags:
 
 每一种技术的出现必然是因为某种需求。正因为人的本性是贪婪的，所以科技的创新才能日新月异。
 
-# Completion机制的工作原理
+# 1 Completion机制的工作原理
 
 内核编程中的一个常见模式就是在当前进程中，再去启动另外一个活动，比如创建新的内核线程或用户进程、向已存在的进程发起请求、再或者操作某些硬件。针对这些情况，内核当然可以尝试使用信号量同步两个任务，代码如下所示：
 
@@ -30,7 +30,7 @@ tags:
 
 针对上面的情况，Linux内核从2.4.7版本开始，引入了另外一种同步技术：completion机制。
 
-# Completion机制的数据结构
+# 2 Completion机制的数据结构
 
 completion同步原语的数据结构如下代码所示：
 
@@ -41,7 +41,7 @@ completion同步原语的数据结构如下代码所示：
 
 可以看出，其由一个整形数done和队列head组成。
 
-# Completion机制的常用API
+# 3 Completion机制的常用API
 
 与信号量的up()函数对应的函数称为complete()函数。它的参数是一个completion数据结构。这个函数会调用spin_lock_irqsave()函数，请求completion等待队列的保护自旋锁，增加done的值，唤醒等待队列中的休眠进程中的一个，最后调用spin_unlock_irqrestore()释放自旋锁。
 
@@ -49,7 +49,7 @@ completion同步原语的数据结构如下代码所示：
 
 completion和信号量的真正区别是等待队列中的自旋锁如何使用。在completion中，自旋锁被用来保证complete()和wait_for_completion()不会并发执行。在信号量中，自旋锁被用来保证并发执行的两个调用down()的函数不会弄乱信号量数据结构。
 
-# Completion机制的示例
+# 4 Completion机制的示例
 
 关于completion机制如何使用，请参考complete的模块示例。该模块定义了一个这样的模块：任何尝试读取设备的进程都会进入等待状态（通过调用wait_for_completion()函数实现），直到有其它进行尝试写该设备。代码类似于下面的代码：
 
